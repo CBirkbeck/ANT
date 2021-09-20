@@ -26,7 +26,7 @@ jobs:
       - name: Link and fetch mathlib
         run: |
           leanproject get CBirkbeck/ModularForms
-          ln -s brouwerfixedpoint project
+          ln -s ModularForms project
           cd project && yes | rm -rf doc && leanproject get-m && leanproject build && cd ..
           inv decls
 
